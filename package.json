@@ -1,0 +1,7 @@
+{
+  "name": "pwn-test-repo",
+  "version": "0.1.0",
+  "dependencies": {
+    "left-pad": "1.0.0"
+  }
+}

@@ -1,0 +1,18 @@
+# .github/workflows/renovate.yml
+name: Renovate
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: renovatebot/github-action@v39.2.4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
